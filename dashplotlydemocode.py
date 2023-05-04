@@ -9,6 +9,7 @@ from dash.dependencies import Input, Output
 data = pd.read_csv('cleaned_data.csv')
 # Create the Dash app
 app = dash.Dash(__name__)
+server=app.server
 # App layout
 app.layout = html.Div([
     html.H1('Travel Safety Analysis'),
